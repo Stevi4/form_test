@@ -1,4 +1,31 @@
 body {
   display: flex;
-  background: grey;
+  background: lightgray;
+  height: 100vh;
+  margin: 0px;
+}
+
+div {
+  flex: 1;
+}
+
+#sidebar {
+  background: lightblue;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+form div:first-child {
+  background: white;
+  flex: 2;
 }
