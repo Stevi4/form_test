@@ -3,6 +3,7 @@ body {
   background: lightgray;
   height: 100vh;
   margin: 0px;
+  --entry-width: 16rem;
 }
 
 div {
@@ -25,7 +26,53 @@ form {
   flex: 3;
 }
 
-form div:first-child {
+form > div:first-child {
+  display: flex;
+  flex-direction: column;
   background: white;
   flex: 2;
+}
+
+h1 {
+  margin-left: 32px;
+  flex: 0;
+}
+
+#entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px 0px 32px 32px;
+  flex: 1;
+}
+
+#entry div {
+  display: flex;
+  justify-content: space-between;
+  width: calc(2.5 * var(--entry-width))
+}
+
+#entry div div {
+  display: flex;
+  flex-direction: column;
+}
+
+#entry div:first-child div {
+  justify-content: start;
+}
+
+#entry div:nth-child(2) div {
+  justify-content: center;
+}
+
+#entry div:last-child div{
+  justify-content: end;
+}
+
+#entry input {
+  width: var(--entry-width);
+}
+
+form > div:last-child {
+  margin: 32px;
 }
