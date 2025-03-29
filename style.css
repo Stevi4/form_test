@@ -7,6 +7,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+@font-face {
+    font-family: "Norse Bold";
+    src: url("fonts/Norse-Bold.otf");
+}
+
 div {
   flex: 1;
 }
@@ -57,14 +62,9 @@ div {
   height: 15vh;
 }
 
-@font-face {
-  font-family: norse-bold;
-  src: url(fonts/Norse-Bold.otf);
-}
-
 h1 {
   font-size: 10vh;
-  font-family: norse-bold;
+  font-family: "Norse Bold";
   color: white;
   overflow: hidden;
 }
